@@ -1,14 +1,12 @@
 import React from "react";
-import Quiz from "./Quizz";
-import { jsQuizz } from "./constants";
-import Homepage from "./Homepage";
+import Homepage from "./components/Homepage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Chapters from "./Chapters";
+import Chapters from "./components/Chapters";
 import AboutUs from "./about-us/AboutUs";
-import DescribingUI from "./DescribingUI";
-import AddingInteractivity from "./AddingInteractivity";
-import ManagingState from "./ManagingState";
-import EscapeHatches from "./EscapeHatches";
+import DescribingUI from "./components/DescribingUI";
+import AddingInteractivity from "./components/AddingInteractivity";
+import ManagingState from "./components/ManagingState";
+import EscapeHatches from "./components/EscapeHatches";
 
 function App() {
   // @ts-ignore
@@ -22,22 +20,13 @@ function App() {
         <Route path="/" element={<Homepage />}></Route>
         <Route path="/chapters" element={<Chapters />} />
         <Route path="/about-us" element={<AboutUs />} />
-        <Route
-          path="/chapters/describing-ui"
-          element={<DescribingUI></DescribingUI>}
-        />
+        <Route path="/chapters/describing-ui" element={<DescribingUI />} />
         <Route
           path="/chapters/adding-interactivity"
-          element={<AddingInteractivity></AddingInteractivity>}
+          element={<AddingInteractivity />}
         />
-        <Route
-          path="/chapters/managing-state"
-          element={<ManagingState></ManagingState>}
-        />
-        <Route
-          path="/chapters/escape-hatches"
-          element={<EscapeHatches></EscapeHatches>}
-        />
+        <Route path="/chapters/managing-state" element={<ManagingState />} />
+        <Route path="/chapters/escape-hatches" element={<EscapeHatches />} />
       </Routes>
     </Router>
   );

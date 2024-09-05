@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import "./Homepage.scss";
-import AboutUs from "./about-us/AboutUs";
-import DescribingUI from "./DescribingUI";
+import React from "react";
+import "../Homepage.scss";
+
 import { Link } from "react-router-dom";
 function Homepage() {
   return (
