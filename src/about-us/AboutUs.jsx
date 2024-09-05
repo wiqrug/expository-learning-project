@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
     <>
-      <div>
+      <div className="homepage-container">
         <h1>Welcome to Our React Learning Platform!</h1>
 
         <p>
@@ -45,6 +46,9 @@ const AboutUs = () => {
         <p>
           Start your journey here, and let’s build something great together!
         </p>
+        <Link to="/">
+          <button>Back</button>
+        </Link>
       </div>
     </>
   );

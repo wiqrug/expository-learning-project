@@ -5,6 +5,9 @@ $bg-accent: #e7e8e9;
 $disabled: #9c9c9c;
 $foreground: #2d264b;
 
+a {
+  text-decoration: none;
+}
 body {
   font-family: monospace;
   background: linear-gradient(0deg, $primary 0.03%, $accent);
