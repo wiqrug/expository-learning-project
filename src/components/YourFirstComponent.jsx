@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import FirstPage from "./first-component-subcomps/FirstPage";
@@ -9,8 +9,19 @@ const YourFirstComponent = () => {
   const [page, setPage] = useState(0);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const container = document.querySelector(".homepage-container");
+    if (container) {
+      container.scrollTo({
+        top: 0,
+        behavior: "smooth", // Optional for smooth scrolling
+      });
+    }
+  }, [page]);
+
   const handlePage = () => {
     //react passes current value of page as an argument to that function
+
     setPage((prevPage) => prevPage + 1);
   };
   const handleBack = () => {
