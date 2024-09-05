@@ -2,7 +2,7 @@ import React from "react";
 import Homepage from "./components/Homepage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Chapters from "./components/Chapters";
-import AboutUs from "./about-us/AboutUs";
+import AboutUs from "./components/AboutUs";
 import DescribingUI from "./components/DescribingUI";
 import AddingInteractivity from "./components/AddingInteractivity";
 import ManagingState from "./components/ManagingState";
