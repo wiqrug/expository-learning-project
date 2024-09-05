@@ -23,6 +23,9 @@ body {
   margin-top: 100px;
   padding: 30px 60px;
   box-sizing: border-box;
+  max-height: 80vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 
   .active-questions-no {
     font-size: 32px;
