@@ -12,6 +12,7 @@ import DescribingUISections from "./components/DescribingUISections";
 import Quiz from "./components/Quizz";
 import { jsQuizz } from "./utils/constants";
 import ImportingAndExportingComponents from "./components/ImportingAndExportingComponents";
+import WritingMarkupWithJsx from "./components/WritingMarkupWithJsx";
 
 function App() {
   return (
@@ -48,12 +49,20 @@ function App() {
           element={
             <ImportingAndExportingComponents></ImportingAndExportingComponents>
           }
-        ></Route>
+        />
         <Route
           path="/chapters/describing-ui/sections/importing-and-exporting-components/quiz"
           element={<Quiz questions={jsQuizz.questions2}></Quiz>}
         />
-      </Routes>
+        <Route
+          path="/chapters/describing-ui/sections/writing-markup-with-jsx/quiz"
+          element={<Quiz questions={jsQuizz.questions3}></Quiz>}
+        />
+        <Route
+          path="/chapters/describing-ui/sections/writing-markup-with-jsx"
+          element={<WritingMarkupWithJsx></WritingMarkupWithJsx>}
+        />
+      </Routes>{" "}
     </Router>
   );
 }

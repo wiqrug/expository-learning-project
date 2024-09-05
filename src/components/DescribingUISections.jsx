@@ -15,7 +15,9 @@ const DescribingUISections = () => {
         >
           <li>Importing and Exporting Components</li>
         </Link>
-        <li>Writing Markup with JSX</li>
+        <Link to={"/chapters/describing-ui/sections/writing-markup-with-jsx"}>
+          <li>Writing Markup with JSX</li>
+        </Link>
         <li>Passing Props To Component</li>
         <li>Conditional Rendering</li>
         <li>Keep Components Pure</li>

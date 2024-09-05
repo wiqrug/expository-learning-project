@@ -59,7 +59,7 @@ export const jsQuizz = {
     },
   ],
 
-  // New questions2 array based on "Importing and Exporting Components"
+  // Questions based on "Importing and Exporting Components"
   questions2: [
     {
       question: "What is a root component file in React?",
@@ -117,6 +117,56 @@ export const jsQuizz = {
       ],
       type: "MCQs",
       correctAnswer: "By using named exports for all components.",
+    },
+  ],
+
+  // New questions3 array based on "Writing Markup with JSX"
+  questions3: [
+    {
+      question: "What is JSX in React?",
+      choices: [
+        "A syntax extension that lets you write JavaScript inside HTML.",
+        "A syntax extension that lets you write HTML-like markup inside JavaScript.",
+        "A JavaScript library used for creating dynamic web applications.",
+        "A tool for state management in React applications.",
+      ],
+      type: "MCQs",
+      correctAnswer:
+        "A syntax extension that lets you write HTML-like markup inside JavaScript.",
+    },
+    {
+      question: "How do you return multiple elements from a React component?",
+      choices: [
+        "Use multiple return statements.",
+        "Wrap them with a single parent tag.",
+        "Separate them using commas.",
+        "Use multiple render methods.",
+      ],
+      type: "MCQs",
+      correctAnswer: "Wrap them with a single parent tag.",
+    },
+    {
+      question: "How should self-closing tags like <img> be written in JSX?",
+      choices: ["<img>", "<img />", "<img></img>", "<img closing>"],
+      type: "MCQs",
+      correctAnswer: "<img />",
+    },
+    {
+      question: "How do you write the class attribute in JSX?",
+      choices: ["class", "classname", "cssClass", "className"],
+      type: "MCQs",
+      correctAnswer: "className",
+    },
+    {
+      question: "What is the purpose of Fragments in JSX?",
+      choices: [
+        "To add an extra div to the DOM.",
+        "To group elements without adding an extra DOM element.",
+        "To define a reusable component.",
+        "To define an inline style block.",
+      ],
+      type: "MCQs",
+      correctAnswer: "To group elements without adding an extra DOM element.",
     },
   ],
 };
