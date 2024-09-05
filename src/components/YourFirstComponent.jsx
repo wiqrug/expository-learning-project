@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import FirstPage from "./first-component-subcomps/FirstPage";
+import SecondPage from "./first-component-subcomps/SecondPage";
+import ThirdPage from "./first-component-subcomps/ThirdPage";
 
 const YourFirstComponent = () => {
   const [page, setPage] = useState(0);
@@ -22,6 +24,8 @@ const YourFirstComponent = () => {
   return (
     <div className="homepage-container">
       {page === 0 && <FirstPage></FirstPage>}
+      {page === 1 && <SecondPage></SecondPage>}
+      {page === 2 && <ThirdPage></ThirdPage>}
 
       <div className="chapters-button-setup">
         {" "}
