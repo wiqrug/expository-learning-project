@@ -52,6 +52,8 @@ h2 {
   font-size: 20px;
   font-weight: 500;
   margin: 0;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
 }
 ul {
   margin-top: 20px;
@@ -78,10 +80,17 @@ li {
   display: flex;
   justify-content: flex-end;
 }
-
+.button-setup {
+  display: flex;
+  flex-direction: column; /* Stack the buttons vertically */
+}
+.chapters-button-setup {
+  display: flex;
+  justify-content: space-between;
+}
 button {
   background: linear-gradient(0deg, $primary 0.8%, $accent);
-  display: flex;
+
   border-radius: 9px;
   font-size: 18px;
   color: $bg;

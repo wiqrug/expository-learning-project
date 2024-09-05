@@ -7,12 +7,14 @@ function Homepage() {
     <div className="homepage-container">
       <>
         <h3>Learn React Online</h3>
-        <Link to="/chapters">
-          <button>Chapters</button>
-        </Link>
-        <Link to="/about-us">
-          <button>About this page</button>
-        </Link>
+        <div className="button-setup">
+          <Link to="/chapters">
+            <button>Chapters</button>
+          </Link>
+          <Link to="/about-us">
+            <button>About this page</button>
+          </Link>
+        </div>
       </>
     </div>
   );

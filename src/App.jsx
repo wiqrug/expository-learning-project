@@ -7,28 +7,31 @@ import DescribingUI from "./components/DescribingUI";
 import AddingInteractivity from "./components/AddingInteractivity";
 import ManagingState from "./components/ManagingState";
 import EscapeHatches from "./components/EscapeHatches";
+import YourFirstComponent from "./components/YourFirstComponent";
 
 function App() {
-  // @ts-ignore
-  // return <Quiz questions={jsQuizz.questions}></Quiz>;
-  // return <Homepage></Homepage>;
-
   return (
-    <Router>
-      {" "}
-      <Routes>
-        <Route path="/" element={<Homepage />}></Route>
-        <Route path="/chapters" element={<Chapters />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/chapters/describing-ui" element={<DescribingUI />} />
-        <Route
-          path="/chapters/adding-interactivity"
-          element={<AddingInteractivity />}
-        />
-        <Route path="/chapters/managing-state" element={<ManagingState />} />
-        <Route path="/chapters/escape-hatches" element={<EscapeHatches />} />
-      </Routes>
-    </Router>
+    <div>
+      <Router>
+        {" "}
+        <Routes>
+          <Route path="/" element={<Homepage />}></Route>
+          <Route path="/chapters" element={<Chapters />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/chapters/describing-ui" element={<DescribingUI />} />
+          <Route
+            path="/chapters/adding-interactivity"
+            element={<AddingInteractivity />}
+          />
+          <Route path="/chapters/managing-state" element={<ManagingState />} />
+          <Route path="/chapters/escape-hatches" element={<EscapeHatches />} />
+          <Route
+            path="/chapters/describing-ui/first-component"
+            element={<YourFirstComponent />}
+          />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
