@@ -5,10 +5,16 @@ const DescribingUISections = () => {
   return (
     <div className="homepage-container">
       <ul>
-        <Link to={"/chapters/describing-ui/sections/your-fist-component"}>
+        <Link to={"/chapters/describing-ui/sections/your-first-component"}>
           <li>Your First Component</li>
         </Link>
-        <li>Importing and Exporting Components</li>
+        <Link
+          to={
+            "/chapters/describing-ui/sections/importing-and-exporting-components"
+          }
+        >
+          <li>Importing and Exporting Components</li>
+        </Link>
         <li>Writing Markup with JSX</li>
         <li>Passing Props To Component</li>
         <li>Conditional Rendering</li>

@@ -84,7 +84,6 @@ const Quiz = ({ questions }) => {
             Wrong Answers: <span>{result.wrongAnswers}</span>
           </p>
           <div className="chapters-button-setup">
-            {" "}
             <Link to={"/chapters/describing-ui/sections/"}>
               <button>Back</button>
             </Link>

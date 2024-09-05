@@ -11,6 +11,7 @@ import YourFirstComponent from "./components/YourFirstComponent";
 import DescribingUISections from "./components/DescribingUISections";
 import Quiz from "./components/Quizz";
 import { jsQuizz } from "./utils/constants";
+import ImportingAndExportingComponents from "./components/ImportingAndExportingComponents";
 
 function App() {
   return (
@@ -35,13 +36,23 @@ function App() {
           element={<DescribingUISections />}
         />
         <Route
-          path="/chapters/describing-ui/sections/your-fist-component"
+          path="/chapters/describing-ui/sections/your-first-component"
           element={<YourFirstComponent />}
         />
         <Route
-          path="/chatpers/describing-ui/sections/your-first-component/quiz"
+          path="/chapters/describing-ui/sections/your-first-component/quiz"
           element={<Quiz questions={jsQuizz.questions}></Quiz>}
+        />
+        <Route
+          path="/chapters/describing-ui/sections/importing-and-exporting-components"
+          element={
+            <ImportingAndExportingComponents></ImportingAndExportingComponents>
+          }
         ></Route>
+        <Route
+          path="/chapters/describing-ui/sections/importing-and-exporting-components/quiz"
+          element={<Quiz questions={jsQuizz.questions2}></Quiz>}
+        />
       </Routes>
     </Router>
   );

@@ -1,11 +1,12 @@
 export const jsQuizz = {
+  // Original questions array remains unchanged
   questions: [
     {
       question: "What is a React component?",
       choices: [
         "A JavaScript function that returns a piece of the UI.",
-        " A CSS function that returns styles.",
-        "A specialized HTML tag used for rendering JavaScript",
+        "A CSS function that returns styles.",
+        "A specialized HTML tag used for rendering JavaScript.",
         "A JavaScript library for building forms.",
       ],
       type: "MCQs",
@@ -17,7 +18,7 @@ export const jsQuizz = {
         "A lowercase letter.",
         "A capital letter.",
         "A special character.",
-        "An underscore (_)",
+        "An underscore (_).",
       ],
       type: "MCQs",
       correctAnswer: "A capital letter.",
@@ -36,13 +37,13 @@ export const jsQuizz = {
     {
       question: "How do you export a component in React?",
       choices: [
-        "import function [ComponentName]()",
-        "export const [ComponentName]()",
-        "default export [ComponentName]()",
-        "export default function [ComponentName]()",
+        "import function [ComponentName]();",
+        "export const [ComponentName]();",
+        "default export [ComponentName]();",
+        "export default function [ComponentName]();",
       ],
       type: "MCQs",
-      correctAnswer: "export default function [ComponentName]()",
+      correctAnswer: "export default function [ComponentName]();",
     },
     {
       question:
@@ -51,10 +52,71 @@ export const jsQuizz = {
         "It causes the components to be invisible.",
         "It makes the code more difficult to understand.",
         "It causes performance issues and bugs.",
-        " It doesn't follow JavaScript conventions.",
+        "It doesn't follow JavaScript conventions.",
       ],
       type: "MCQs",
       correctAnswer: "It causes performance issues and bugs.",
+    },
+  ],
+
+  // New questions2 array based on "Importing and Exporting Components"
+  questions2: [
+    {
+      question: "What is a root component file in React?",
+      choices: [
+        "A component that manages the state of other components.",
+        "A component that is composed of other components.",
+        "A file that contains the main component for the app or a page.",
+        "A file that stores only CSS for components.",
+      ],
+      type: "MCQs",
+      correctAnswer:
+        "A file that contains the main component for the app or a page.",
+    },
+    {
+      question: "What is the correct way to export a component in React?",
+      choices: [
+        "export function [ComponentName]()",
+        "export default function [ComponentName]()",
+        "default export { ComponentName }",
+        "import { ComponentName } from './file.js'",
+      ],
+      type: "MCQs",
+      correctAnswer: "export default function [ComponentName]()",
+    },
+    {
+      question: "What is the difference between default and named exports?",
+      choices: [
+        "Default exports allow multiple exports per file, named exports do not.",
+        "Named exports allow multiple exports per file, default exports do not.",
+        "Default exports must be imported with curly braces, named exports do not.",
+        "Named exports must be imported without curly braces, default exports use curly braces.",
+      ],
+      type: "MCQs",
+      correctAnswer:
+        "Named exports allow multiple exports per file, default exports do not.",
+    },
+    {
+      question: "How do you import a default export in React?",
+      choices: [
+        "import { [ComponentName] } from './file.js'",
+        "import [ComponentName] from './file.js'",
+        "import { default } from './file.js'",
+        "export { default } from './file.js'",
+      ],
+      type: "MCQs",
+      correctAnswer: "import [ComponentName] from './file.js'",
+    },
+    {
+      question: "How can you export multiple components from the same file?",
+      choices: [
+        "By using named exports for all components.",
+        "By using default exports for all components.",
+        "By combining named exports with default exports.",
+        "It is not possible to export multiple components from the same file.",
+      ],
+      type: "MCQs",
+      correctAnswer: "By using named exports for all components.",
     },
   ],
 };

@@ -1,7 +1,6 @@
 import FirstPage from "./FirstPage";
 import SecondPage from "./SecondPage";
-import ThirdPage from "./ThirdPage";
 
-const Pages = [FirstPage, SecondPage, ThirdPage];
+const Pages = [FirstPage, SecondPage];
 
 export default Pages;
