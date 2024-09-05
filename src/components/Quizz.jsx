@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { resultInitialState } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 const Quiz = ({ questions }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -82,7 +83,13 @@ const Quiz = ({ questions }) => {
           <p>
             Wrong Answers: <span>{result.wrongAnswers}</span>
           </p>
-          <button onClick={onTryAgain}>try again</button>
+          <div className="chapters-button-setup">
+            {" "}
+            <Link to={"/chapters/describing-ui/sections/"}>
+              <button>Back</button>
+            </Link>
+            <button onClick={onTryAgain}>try again</button>
+          </div>
         </div>
       )}
     </div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Pages from "./components/Pages";
 
 const YourFirstComponent = () => {
@@ -22,15 +22,12 @@ const YourFirstComponent = () => {
   }, [page]);
 
   const handlePage = () => {
-    if (page === 2) {
-      return;
-    }
     setPage((prevPage) => prevPage + 1);
   };
 
   const handleBack = () => {
     if (page === 0) {
-      navigate("/");
+      navigate("/chapters/describing-ui/sections/");
     } else {
       setPage((prevPage) => prevPage - 1);
     }
@@ -41,7 +38,15 @@ const YourFirstComponent = () => {
       {Pages[page]()}
       <div className="chapters-button-setup">
         <button onClick={handleBack}>Back</button>
-        <button onClick={handlePage}>Continue</button>
+        {page < 2 ? (
+          <button onClick={handlePage}>Continue</button>
+        ) : (
+          <Link
+            to={"/chatpers/describing-ui/sections/your-first-component/quiz"}
+          >
+            <button>Go to Quiz</button>
+          </Link>
+        )}
       </div>
     </div>
   );

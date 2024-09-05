@@ -37,6 +37,9 @@ body {
     height: 12px;
   }
 
+  li:hover {
+    background: $accent;
+  }
   &::-webkit-scrollbar-track {
     background: $bg-accent;
     border-radius: 6px;

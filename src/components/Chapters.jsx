@@ -6,7 +6,7 @@ function Chapters() {
   return (
     <div className="homepage-container">
       <ul>
-        <Link to="/chapters/describing-ui">
+        <Link to="/chapters/describing-ui/sections">
           <li>Describing the UI</li>
         </Link>
         <Link to="/chapters/adding-interactivity">

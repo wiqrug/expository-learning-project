@@ -1,51 +1,60 @@
 export const jsQuizz = {
   questions: [
     {
+      question: "What is a React component?",
+      choices: [
+        "A JavaScript function that returns a piece of the UI.",
+        " A CSS function that returns styles.",
+        "A specialized HTML tag used for rendering JavaScript",
+        "A JavaScript library for building forms.",
+      ],
+      type: "MCQs",
+      correctAnswer: "A JavaScript function that returns a piece of the UI.",
+    },
+    {
+      question: "What must a React component's name start with?",
+      choices: [
+        "A lowercase letter.",
+        "A capital letter.",
+        "A special character.",
+        "An underscore (_)",
+      ],
+      type: "MCQs",
+      correctAnswer: "A capital letter.",
+    },
+    {
+      question: "Which of the following is true about JSX in React?",
+      choices: [
+        "It allows embedding CSS directly in JavaScript.",
+        "It allows embedding HTML-like markup in JavaScript.",
+        "It is only used for adding event listeners.",
+        "It is used for state management.",
+      ],
+      type: "MCQs",
+      correctAnswer: "It allows embedding HTML-like markup in JavaScript.",
+    },
+    {
+      question: "How do you export a component in React?",
+      choices: [
+        "import function [ComponentName]()",
+        "export const [ComponentName]()",
+        "default export [ComponentName]()",
+        "export default function [ComponentName]()",
+      ],
+      type: "MCQs",
+      correctAnswer: "export default function [ComponentName]()",
+    },
+    {
       question:
-        "Which of the following is used in React.js to increase performance?",
+        "Why is it incorrect to define a component inside another component in React?",
       choices: [
-        "Virtual DOM",
-        "Original DOM",
-        "Both A and B",
-        "None of the above",
+        "It causes the components to be invisible.",
+        "It makes the code more difficult to understand.",
+        "It causes performance issues and bugs.",
+        " It doesn't follow JavaScript conventions.",
       ],
       type: "MCQs",
-      correctAnswer: "Virtual DOM",
-    },
-    {
-      question: "What is ReactJS?",
-      choices: [
-        "Server-side framework",
-        "User Interface framework",
-        "both a and b",
-        "None of the above",
-      ],
-      type: "MCQs",
-      correctAnswer: "User Interface framework",
-    },
-    {
-      question:
-        "Identify the one which is used to pass data to components from outside",
-      choices: ["Render with arguments", "setState", "PropTypes", "props"],
-      type: "MCQs",
-      correctAnswer: "props",
-    },
-    {
-      question: "In which language is React.js written?",
-      choices: ["Python", "Java", "C#", "JavaScript"],
-      type: "MCQs",
-      correctAnswer: "JavaScript",
-    },
-    {
-      question: "What is Babel?",
-      choices: [
-        "JavaScript interpreter",
-        "JavaScript transpiler",
-        "JavaScript compiler",
-        "None of the above",
-      ],
-      type: "MCQs",
-      correctAnswer: "JavaScript compiler",
+      correctAnswer: "It causes performance issues and bugs.",
     },
   ],
 };
