@@ -6,12 +6,18 @@ function Chapters() {
   return (
     <div className="homepage-container">
       <ul>
-        <li>
-          Describing the UI<DescribingUI></DescribingUI>
-        </li>
-        <li>Adding interactivity</li>
-        <li>Managing State</li>
-        <li>Escape Hatches</li>
+        <Link to="/chapters/describing-ui">
+          <li>Describing the UI</li>
+        </Link>
+        <Link to="/chapters/adding-interactivity">
+          <li>Adding Interactivity</li>
+        </Link>
+        <Link to="/chapters/managing-state">
+          <li>Managing State</li>
+        </Link>
+        <Link to="/chapters/escape-hatches">
+          <li>Escape Hatches</li>
+        </Link>
       </ul>
       <Link to="/">
         <button>Back</button>

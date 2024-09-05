@@ -5,6 +5,10 @@ import Homepage from "./Homepage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Chapters from "./Chapters";
 import AboutUs from "./about-us/AboutUs";
+import DescribingUI from "./DescribingUI";
+import AddingInteractivity from "./AddingInteractivity";
+import ManagingState from "./ManagingState";
+import EscapeHatches from "./EscapeHatches";
 
 function App() {
   // @ts-ignore
@@ -18,6 +22,22 @@ function App() {
         <Route path="/" element={<Homepage />}></Route>
         <Route path="/chapters" element={<Chapters />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route
+          path="/chapters/describing-ui"
+          element={<DescribingUI></DescribingUI>}
+        />
+        <Route
+          path="/chapters/adding-interactivity"
+          element={<AddingInteractivity></AddingInteractivity>}
+        />
+        <Route
+          path="/chapters/managing-state"
+          element={<ManagingState></ManagingState>}
+        />
+        <Route
+          path="/chapters/escape-hatches"
+          element={<EscapeHatches></EscapeHatches>}
+        />
       </Routes>
     </Router>
   );
