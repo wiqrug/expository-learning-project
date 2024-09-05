@@ -1,6 +1,6 @@
 import React from "react";
 // @ts-ignore
-import myImage from "../../assets/img1.png";
+// import myImage from "../../assets/img1.png";
 
 const SecondPage = () => {
   return (

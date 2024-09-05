@@ -1,10 +1,11 @@
 import React from "react";
+
 // @ts-ignore
-import img2 from "../../assets/img2.png";
+import img2 from "../../../assets/img2.png";
 // @ts-ignore
-import img3 from "../../assets/img3.png";
+import img3 from "../../../assets/img3.png";
 // @ts-ignore
-import img4 from "../../assets/img4.png";
+import img4 from "../../../assets/img4.png";
 
 const ThirdPage = () => {
   return (

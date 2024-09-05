@@ -3,7 +3,6 @@ import React from "react";
 const FirstPage = () => {
   return (
     <>
-      {" "}
       <h2>Your First Component</h2>
       <p>
         Components are one of the core concepts of React. They are the

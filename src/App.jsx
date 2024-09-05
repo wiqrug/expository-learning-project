@@ -11,27 +11,24 @@ import YourFirstComponent from "./components/YourFirstComponent";
 
 function App() {
   return (
-    <div>
-      <Router>
-        {" "}
-        <Routes>
-          <Route path="/" element={<Homepage />}></Route>
-          <Route path="/chapters" element={<Chapters />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/chapters/describing-ui" element={<DescribingUI />} />
-          <Route
-            path="/chapters/adding-interactivity"
-            element={<AddingInteractivity />}
-          />
-          <Route path="/chapters/managing-state" element={<ManagingState />} />
-          <Route path="/chapters/escape-hatches" element={<EscapeHatches />} />
-          <Route
-            path="/chapters/describing-ui/first-component"
-            element={<YourFirstComponent />}
-          />
-        </Routes>
-      </Router>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage />}></Route>
+        <Route path="/chapters" element={<Chapters />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/chapters/describing-ui" element={<DescribingUI />} />
+        <Route
+          path="/chapters/adding-interactivity"
+          element={<AddingInteractivity />}
+        />
+        <Route path="/chapters/managing-state" element={<ManagingState />} />
+        <Route path="/chapters/escape-hatches" element={<EscapeHatches />} />
+        <Route
+          path="/chapters/describing-ui/first-component"
+          element={<YourFirstComponent />}
+        />
+      </Routes>
+    </Router>
   );
 }
 
