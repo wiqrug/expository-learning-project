@@ -19,7 +19,7 @@ body {
   position: fixed;
   top: 1vh;
   left: 1vw;
-  background: linear-gradient(0deg, $primary 0.8%, $accent);
+  background: $primary;
   border-radius: 9px;
   font-size: 18px;
   color: $bg;
@@ -30,7 +30,7 @@ body {
   z-index: 1000; /* Ensure it's above other elements */
 
   &:hover {
-    background: linear-gradient(0deg, $accent 0.8%, $primary);
+    background: $foreground;
   }
 }
 .homepage-container {
