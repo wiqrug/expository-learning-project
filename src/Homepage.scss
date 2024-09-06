@@ -15,7 +15,24 @@ body {
   padding: 0 30px;
   height: 100vh;
 }
+.top-left-button {
+  position: fixed;
+  top: 1vh;
+  left: 1vw;
+  background: linear-gradient(0deg, $primary 0.8%, $accent);
+  border-radius: 9px;
+  font-size: 18px;
+  color: $bg;
+  padding: 10px 32px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's above other elements */
 
+  &:hover {
+    background: linear-gradient(0deg, $accent 0.8%, $primary);
+  }
+}
 .homepage-container {
   width: 80vw; /* Increase the width to 80% of the viewport width */
   max-width: 1200px; /* Ensure it doesn't exceed 1200px on larger screens */

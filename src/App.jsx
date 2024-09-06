@@ -1,6 +1,6 @@
 import React from "react";
 import Homepage from "./components/Homepage";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Chapters from "./components/Chapters";
 import AboutUs from "./components/AboutUs";
 import DescribingUI from "./components/DescribingUI";
@@ -21,6 +21,9 @@ import YourUIAsATree from "./components/YourUIAsATree";
 function App() {
   return (
     <Router>
+      <Link to="/">
+        <button className="top-left-button">Home</button>
+      </Link>
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
         <Route path="/chapters" element={<Chapters />} />
