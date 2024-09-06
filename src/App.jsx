@@ -16,6 +16,7 @@ import WritingMarkupWithJsx from "./components/WritingMarkupWithJsx";
 import PassingPropsToAComponent from "./components/PassingPropsToAComponent";
 import ConditionalRendering from "./components/ConditionalRendering";
 import KeepComponentsPure from "./components/KeepComponentsPure";
+import YourUIAsATree from "./components/YourUIAsATree";
 
 function App() {
   return (
@@ -89,6 +90,14 @@ function App() {
         <Route
           path="/chapters/describing-ui/sections/keep-components-pure/quiz"
           element={<Quiz questions={jsQuizz.questions6}></Quiz>}
+        />
+        <Route
+          path="/chapters/describing-ui/sections/your-ui-as-a-tree"
+          element={<YourUIAsATree />}
+        ></Route>
+        <Route
+          path="/chapters/describing-ui/sections/your-ui-as-a-tree/quiz"
+          element={<Quiz questions={jsQuizz.questions7}></Quiz>}
         />
       </Routes>
     </Router>

@@ -29,7 +29,9 @@ const DescribingUISections = () => {
         <Link to={"/chapters/describing-ui/sections/keep-components-pure"}>
           <li>Keep Components Pure</li>
         </Link>
-        <li>Your UI as a Tree</li>
+        <Link to={"/chapters/describing-ui/sections/your-ui-as-a-tree"}>
+          <li>Your UI As A Tree</li>
+        </Link>
       </ul>
       <Link to={"/chapters/"}>
         <button>Back</button>

@@ -354,6 +354,62 @@ export const jsQuizz = {
         "They should always return the same JSX for the same inputs.",
     },
   ],
+  questions7: [
+    {
+      question: "How does React model the relationship between components?",
+      choices: ["As a list", "As a loop", "As a tree", "As a grid"],
+      type: "MCQs",
+      correctAnswer: "As a tree",
+    },
+    {
+      question: "What does a render tree represent?",
+      choices: [
+        "The relationship between HTML tags",
+        "The structure of JavaScript modules",
+        "The relationship between React components in a single render pass",
+        "The sequence in which components are rendered in the DOM",
+      ],
+      type: "MCQs",
+      correctAnswer:
+        "The relationship between React components in a single render pass",
+    },
+    {
+      question: "What is the root node of a React render tree?",
+      choices: [
+        "The first rendered child component",
+        "The main entry point of the app",
+        "The root component of the app",
+        "The deepest child component",
+      ],
+      type: "MCQs",
+      correctAnswer: "The root component of the app",
+    },
+    {
+      question:
+        "What is a key difference between a render tree and a module dependency tree?",
+      choices: [
+        "Render trees represent components, while module dependency trees represent files and modules.",
+        "Module dependency trees only include HTML tags, while render trees include React components.",
+        "Render trees are based on conditional logic, while module dependency trees are static.",
+        "Render trees contain functions, while module dependency trees contain JSX.",
+      ],
+      type: "MCQs",
+      correctAnswer:
+        "Render trees represent components, while module dependency trees represent files and modules.",
+    },
+    {
+      question: "What is the purpose of a module dependency tree in React?",
+      choices: [
+        "To optimize the render speed of components",
+        "To track the data flow between parent and child components",
+        "To show which modules are necessary to run the app and help bundle the app for production",
+        "To identify frequently re-rendered components",
+      ],
+      type: "MCQs",
+      correctAnswer:
+        "To show which modules are necessary to run the app and help bundle the app for production",
+    },
+  ],
 };
 
 export const resultInitialState = {
