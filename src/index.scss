@@ -8,6 +8,7 @@ $foreground: #2d264b;
 a {
   text-decoration: none;
 }
+
 body {
   font-family: monospace;
   background: linear-gradient(0deg, $primary 0.03%, $accent);
@@ -20,85 +21,141 @@ body {
 }
 
 .quiz-container {
-  width: 500px;
+  width: 80vw; /* Increase the width to 80% of the viewport width */
+  max-width: 1200px; /* Ensure it doesn't exceed 1200px on larger screens */
   background: $bg;
-  border-radius: 4px;
-  margin-top: 100px;
-  padding: 30px 60px;
+  border-radius: 0.4em;
+  margin-top: 10vh;
+  padding: 3vh 6vw;
   box-sizing: border-box;
+  max-height: 80vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 
   .active-questions-no {
-    font-size: 32px;
+    font-size: 2em;
     font-weight: 500;
     color: $primary;
   }
+
   .active-question-no {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 500;
     color: $disabled;
   }
+
   h2 {
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: 500;
     margin: 0;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
   }
+
   ul {
-    margin-top: 20px;
-    margin-left: -40px;
+    margin-top: 2vh;
+    margin-left: -4vw;
   }
+
   li {
     text-decoration: none;
     list-style: none;
     color: $foreground;
-    font-size: 16px;
+    font-size: 1em;
     background: $bg;
     border: 1px solid $disabled;
-    border-radius: 16px;
-    padding: 11px;
-    margin-top: 15px;
+    border-radius: 1em;
+    padding: 1.1em;
+    margin-top: 1.5vh;
     cursor: pointer;
+
+    &:hover {
+      background: $accent;
+    }
   }
+
   .selected-answer {
     background: $primary;
     border: 1px solid $accent;
     color: $bg;
   }
+
   .footer {
     display: flex;
     justify-content: flex-end;
   }
 
   button {
-    background: linear-gradient(0deg, $primary 0.03%, $accent);
-    border-radius: 9px;
-    font-size: 18px;
+    background: linear-gradient(0deg, $primary 0.8%, $accent);
+    border-radius: 0.5em;
+    font-size: 1.2em;
     color: $bg;
-    padding: 10px 32px;
+    padding: 1vh 2vw;
     outline: none;
     border: none;
-    margin-top: 15px;
+    margin-top: 2vh;
     cursor: pointer;
+    transition: background 0.3s ease;
 
-    &disabled {
+    &:hover {
+      background: linear-gradient(0deg, $accent 0.8%, $primary);
+    }
+
+    &:active {
+      transform: scale(0.98); /* Subtle press effect */
+    }
+
+    &:disabled {
       background: $bg-accent;
-      color: disabled;
+      color: $disabled;
       cursor: not-allowed;
     }
   }
+
   .result {
     text-align: center;
+
     h3 {
-      font-size: 24px;
+      font-size: 1.5em;
       letter-spacing: 1.4px;
       text-align: center;
     }
+
     p {
-      font-size: 16px;
+      font-size: 1em;
       font-weight: 500;
+
       span {
         color: $primary;
-        font-size: 22px;
+        font-size: 1.4em;
       }
     }
+  }
+
+  &::-webkit-scrollbar {
+    width: 1em;
+    height: 1em;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $bg-accent;
+    border-radius: 0.6em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $primary;
+    border-radius: 1em;
+    border: 0.3em solid $bg-accent;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $accent;
+  }
+}
+
+@-moz-document url-prefix() {
+  .quiz-container {
+    scrollbar-color: $primary $bg-accent;
+    scrollbar-width: thin;
   }
 }
