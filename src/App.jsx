@@ -13,6 +13,7 @@ import Quiz from "./components/Quizz";
 import { jsQuizz } from "./utils/constants";
 import ImportingAndExportingComponents from "./components/ImportingAndExportingComponents";
 import WritingMarkupWithJsx from "./components/WritingMarkupWithJsx";
+import PassingPropsToAComponent from "./components/PassingPropsToAComponent";
 
 function App() {
   return (
@@ -62,7 +63,15 @@ function App() {
           path="/chapters/describing-ui/sections/writing-markup-with-jsx"
           element={<WritingMarkupWithJsx></WritingMarkupWithJsx>}
         />
-      </Routes>{" "}
+        <Route
+          path="/chapters/describing-ui/sections/passing-props-to-a-component"
+          element={<PassingPropsToAComponent />}
+        />
+        <Route
+          path="/chapters/describing-ui/sections/passing-props-to-a-component/quiz"
+          element={<Quiz questions={jsQuizz.questions4}></Quiz>}
+        />
+      </Routes>
     </Router>
   );
 }

@@ -18,7 +18,11 @@ const DescribingUISections = () => {
         <Link to={"/chapters/describing-ui/sections/writing-markup-with-jsx"}>
           <li>Writing Markup with JSX</li>
         </Link>
-        <li>Passing Props To Component</li>
+        <Link
+          to={"/chapters/describing-ui/sections/passing-props-to-a-component"}
+        >
+          <li>Passing Props To Component</li>
+        </Link>
         <li>Conditional Rendering</li>
         <li>Keep Components Pure</li>
         <li>Your UI as a Tree</li>

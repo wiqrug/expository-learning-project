@@ -169,6 +169,67 @@ export const jsQuizz = {
       correctAnswer: "To group elements without adding an extra DOM element.",
     },
   ],
+  questions4: [
+    {
+      question: "What are props in React used for?",
+      choices: [
+        "To define CSS styles in a component.",
+        "To pass information from a parent component to a child component.",
+        "To manage component state.",
+        "To trigger lifecycle methods.",
+      ],
+      type: "MCQs",
+      correctAnswer:
+        "To pass information from a parent component to a child component.",
+    },
+    {
+      question: "How do you pass multiple props to a child component in React?",
+      choices: [
+        "By passing them as an object.",
+        "By using commas to separate them.",
+        "By passing them as separate attributes.",
+        "By placing them inside curly braces.",
+      ],
+      type: "MCQs",
+      correctAnswer: "By passing them as separate attributes.",
+    },
+    {
+      question:
+        "Which of the following is a correct way to destructure props in a React component?",
+      choices: [
+        "function Avatar(props) { const { person, size } = props; }",
+        "function Avatar({ props }) { person = props.person; }",
+        "function Avatar({ person, size }) { }",
+        "function Avatar({ props.person, props.size }) { }",
+      ],
+      type: "MCQs",
+      correctAnswer: "function Avatar({ person, size }) { }",
+    },
+    {
+      question: "What is the purpose of the JSX spread syntax {...props}?",
+      choices: [
+        "To pass all the parent's state to the child component.",
+        "To pass all props to a child component without listing each one individually.",
+        "To pass multiple components as children.",
+        "To allow props to be edited from within the child component.",
+      ],
+      type: "MCQs",
+      correctAnswer:
+        "To pass all props to a child component without listing each one individually.",
+    },
+    {
+      question: "Which of the following is true about props in React?",
+      choices: [
+        "Props are mutable, and you can change them in the child component.",
+        "Props are immutable and can only be changed by the parent component.",
+        "Props cannot be passed as objects or arrays.",
+        "Props are only used for managing component state.",
+      ],
+      type: "MCQs",
+      correctAnswer:
+        "Props are immutable and can only be changed by the parent component.",
+    },
+  ],
 };
 
 export const resultInitialState = {
