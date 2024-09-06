@@ -88,7 +88,7 @@ function App() {
         ></Route>
         <Route
           path="/chapters/describing-ui/sections/keep-components-pure/quiz"
-          element={<Quiz questions={jsQuizz.questions5}></Quiz>}
+          element={<Quiz questions={jsQuizz.questions6}></Quiz>}
         />
       </Routes>
     </Router>

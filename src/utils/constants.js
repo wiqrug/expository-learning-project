@@ -293,6 +293,67 @@ export const jsQuizz = {
         "By conditionally including JSX inside a single return block.",
     },
   ],
+  questions6: [
+    {
+      question: "What is a pure function in React?",
+      choices: [
+        "A function that changes global variables.",
+        "A function that only performs a calculation without side effects.",
+        "A function that depends on external data for rendering.",
+        "A function that renders components asynchronously.",
+      ],
+      type: "MCQs",
+      correctAnswer:
+        "A function that only performs a calculation without side effects.",
+    },
+    {
+      question: "What is an example of a pure function?",
+      choices: [
+        "A function that modifies a global variable.",
+        "A function that logs data to the console.",
+        "A function that always returns the same result for the same input.",
+        "A function that depends on user input for rendering.",
+      ],
+      type: "MCQs",
+      correctAnswer:
+        "A function that always returns the same result for the same input.",
+    },
+    {
+      question: "Which of the following can make a React component impure?",
+      choices: [
+        "Returning JSX from a component.",
+        "Changing a preexisting variable during rendering.",
+        "Passing props to a child component.",
+        "Using state to track user interactions.",
+      ],
+      type: "MCQs",
+      correctAnswer: "Changing a preexisting variable during rendering.",
+    },
+    {
+      question:
+        "What should you do if your component needs to perform a side effect?",
+      choices: [
+        "Perform the side effect inside the render function.",
+        "Use an event handler or useEffect for side effects.",
+        "Change props directly to trigger side effects.",
+        "Use local mutation to handle side effects.",
+      ],
+      type: "MCQs",
+      correctAnswer: "Use an event handler or useEffect for side effects.",
+    },
+    {
+      question: "Which statement is true about pure components in React?",
+      choices: [
+        "They should mutate state directly for better performance.",
+        "They should always return the same JSX for the same inputs.",
+        "They should rely on other components' rendering order.",
+        "They should use global variables for rendering.",
+      ],
+      type: "MCQs",
+      correctAnswer:
+        "They should always return the same JSX for the same inputs.",
+    },
+  ],
 };
 
 export const resultInitialState = {

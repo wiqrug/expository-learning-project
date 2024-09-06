@@ -26,7 +26,9 @@ const DescribingUISections = () => {
         <Link to={"/chapters/describing-ui/sections/conditional-rendering"}>
           <li>Conditional Rendering</li>
         </Link>
-        <li>Keep Components Pure</li>
+        <Link to={"/chapters/describing-ui/sections/keep-components-pure"}>
+          <li>Keep Components Pure</li>
+        </Link>
         <li>Your UI as a Tree</li>
       </ul>
       <Link to={"/chapters/"}>
