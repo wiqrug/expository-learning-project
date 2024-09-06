@@ -17,22 +17,24 @@ body {
 }
 .top-left-button {
   position: fixed;
-  top: 1vh;
-  left: 1vw;
-  background: $primary;
-  border-radius: 9px;
-  font-size: 18px;
+  top: 2vh;
+  left: 2vw;
+  background: linear-gradient(0deg, $primary 0.8%, $accent);
+  border-radius: 1vw;
+  font-size: 1.2vw; /* Use viewport width for a scalable font size */
   color: $bg;
-  padding: 10px 32px;
+  padding: 1vh 2vw; /* Use viewport units for padding */
   outline: none;
   border: none;
   cursor: pointer;
-  z-index: 1000; /* Ensure it's above other elements */
+  z-index: 1000; /* Keep it above other elements */
+  width: auto; /* Let the button size itself based on content */
 
   &:hover {
     background: $foreground;
   }
 }
+
 .homepage-container {
   width: 80vw; /* Increase the width to 80% of the viewport width */
   max-width: 1200px; /* Ensure it doesn't exceed 1200px on larger screens */
