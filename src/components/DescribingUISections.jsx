@@ -23,7 +23,9 @@ const DescribingUISections = () => {
         >
           <li>Passing Props To Component</li>
         </Link>
-        <li>Conditional Rendering</li>
+        <Link to={"/chapters/describing-ui/sections/conditional-rendering"}>
+          <li>Conditional Rendering</li>
+        </Link>
         <li>Keep Components Pure</li>
         <li>Your UI as a Tree</li>
       </ul>

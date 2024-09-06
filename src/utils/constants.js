@@ -230,6 +230,69 @@ export const jsQuizz = {
         "Props are immutable and can only be changed by the parent component.",
     },
   ],
+  questions5: [
+    {
+      question: "What is conditional rendering in React?",
+      choices: [
+        "Rendering components based on user authentication.",
+        "Rendering JSX based on certain conditions using JavaScript.",
+        "Rendering components only if props are passed.",
+        "Rendering components with default values.",
+      ],
+      type: "MCQs",
+      correctAnswer:
+        "Rendering JSX based on certain conditions using JavaScript.",
+    },
+    {
+      question:
+        "Which of the following is the correct syntax for conditionally rendering JSX using a ternary operator?",
+      choices: [
+        "{isTrue ? <ComponentA /> : <ComponentB />}",
+        "{isTrue <ComponentA /> : <ComponentB />}",
+        "{isTrue && <ComponentA /> : <ComponentB />}",
+        "{isTrue ? <ComponentA /> && <ComponentB />}",
+      ],
+      type: "MCQs",
+      correctAnswer: "{isTrue ? <ComponentA /> : <ComponentB />}",
+    },
+    {
+      question:
+        "What does the logical AND (&&) operator do in conditional rendering?",
+      choices: [
+        "It renders the left-hand side if the condition is true.",
+        "It renders both sides of the condition.",
+        "It renders the JSX on the right side if the condition on the left is true.",
+        "It always renders both conditions regardless of the truthiness.",
+      ],
+      type: "MCQs",
+      correctAnswer:
+        "It renders the JSX on the right side if the condition on the left is true.",
+    },
+    {
+      question: "What happens if a React component returns `null`?",
+      choices: [
+        "The component will throw an error.",
+        "The component will display an empty string.",
+        "The component will render nothing.",
+        "The component will render a default fallback.",
+      ],
+      type: "MCQs",
+      correctAnswer: "The component will render nothing.",
+    },
+    {
+      question:
+        "How can you avoid JSX duplication when conditionally rendering elements?",
+      choices: [
+        "By using multiple return statements.",
+        "By using the && operator instead of if statements.",
+        "By conditionally including JSX inside a single return block.",
+        "By using nested components for every condition.",
+      ],
+      type: "MCQs",
+      correctAnswer:
+        "By conditionally including JSX inside a single return block.",
+    },
+  ],
 };
 
 export const resultInitialState = {

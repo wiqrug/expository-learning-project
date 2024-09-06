@@ -14,6 +14,8 @@ import { jsQuizz } from "./utils/constants";
 import ImportingAndExportingComponents from "./components/ImportingAndExportingComponents";
 import WritingMarkupWithJsx from "./components/WritingMarkupWithJsx";
 import PassingPropsToAComponent from "./components/PassingPropsToAComponent";
+import ConditionalRendering from "./components/ConditionalRendering";
+import KeepComponentsPure from "./components/KeepComponentsPure";
 
 function App() {
   return (
@@ -70,6 +72,23 @@ function App() {
         <Route
           path="/chapters/describing-ui/sections/passing-props-to-a-component/quiz"
           element={<Quiz questions={jsQuizz.questions4}></Quiz>}
+        />
+
+        <Route
+          path="/chapters/describing-ui/sections/conditional-rendering"
+          element={<ConditionalRendering />}
+        ></Route>
+        <Route
+          path="/chapters/describing-ui/sections/conditional-rendering/quiz"
+          element={<Quiz questions={jsQuizz.questions5}></Quiz>}
+        />
+        <Route
+          path="/chapters/describing-ui/sections/keep-components-pure"
+          element={<KeepComponentsPure />}
+        ></Route>
+        <Route
+          path="/chapters/describing-ui/sections/keep-components-pure/quiz"
+          element={<Quiz questions={jsQuizz.questions5}></Quiz>}
         />
       </Routes>
     </Router>
